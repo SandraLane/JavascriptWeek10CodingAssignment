@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    >
+</head>
+<body class="container">
+            <div>
+                <img
+                     src="https://media.licdn.com/dms/image/C5116AQHjy1akJQevaQ/profile-displaybackgroundimage-shrink_350_1400/0/1517495470482?e=1709164800&v=beta&t=HOVxS6lZPzOuZx7AjGXbsRAHqz-cQ2UuRDSwPRz4EU8"
+                     class="img-fluid"
+                     alt="Breakfast"
+                    width="900"
+                 />
+             </div>
+      <h1 class="text-center mb-2">Meals on Hand</h1>
+      <br>
+         <div class="img-div">
+            <img src="http://www.promiseland.it/wp-content/uploads/2019/10/cucina-vegana-720x300.jpg" width="900" class="img-fluid" alt="Veggies"/> 
+        </div> 
+             <h3 class="text-center mb-2">
+              Enter your recipe and the date to be cooked below.
+            </h3>  
+            <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="date-created">Date Created</label>
+                        <input type="date" class="form-control" id="date-created">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-cook-date">To Cook Date</label>
+                        <input type="date" class="form-control" id="new-cook-date">
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-recipe">Recipe</label>
+                        <input type="text" class="form-control" id="new-recipe" placeholder="Recipe">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <button id="add" class="btn btn-primary form-control">Create</button>
+            </div> 
+        </div>
+    </div>
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Recipe</th>
+            <th>Date Created</th>
+            <th>Cooking Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+  
+    
+    <script src="recipe.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
